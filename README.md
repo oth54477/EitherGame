@@ -12,4 +12,4 @@
 
 ![game](./Either_img/game.png)
 
-![gmae2](/Users/otaehun/Documents/SSAFY/EitherGame/Either_img/gmae2.png)
+![gmae2](./Either_img/gmae2.png)
