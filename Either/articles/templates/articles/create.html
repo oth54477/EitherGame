@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>
+    {% for s in 'New Game' %}
+      <span>{{ s }}</span>
+    {% endfor %}
+  </h1>
+  {% comment %} <h1>New Game</h1> {% endcomment %}
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">CREATE</button>
+  </form>
+  <hr>
+{% endblock content %}

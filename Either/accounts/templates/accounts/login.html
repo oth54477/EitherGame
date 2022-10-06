@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>
+    {% for s in 'Login' %}
+      <span>{{ s }}</span>
+    {% endfor %}
+  </h1>
+  {% comment %} <h1>로그인</h1> {% endcomment %}
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">LOGIN</button>
+  </form>
+{% endblock content %}
